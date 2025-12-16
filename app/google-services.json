@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "132696709186",
+    "firebase_url": "https://firstproject-a124b-default-rtdb.firebaseio.com",
+    "project_id": "firstproject-a124b",
+    "storage_bucket": "firstproject-a124b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132696709186:android:9799acd5f2656ae35df5db",
+        "android_client_info": {
+          "package_name": "com.example.FirstComposeApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6tDAAbNSlYH3zXqFooY2nZEvzcCT9r80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
