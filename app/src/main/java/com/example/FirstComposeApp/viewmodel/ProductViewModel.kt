@@ -1,5 +1,7 @@
 package com.example.FirstComposeApp.viewmodel
 
+import android.content.Context
+import android.net.Uri
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.FirstComposeApp.model.ProductModel
@@ -53,4 +55,10 @@ class ProductViewModel(val repo: ProductRepo) : ViewModel() {
     fun getProductByCategory(categoryId:String, callback: (Boolean, String, List<ProductModel>?) -> Unit){
         repo.getProductByCategory(categoryId,callback)
     }
+
+    fun uploadImage(context: Context, imageUri: Uri, callback: ( String?) -> Unit){
+        repo.uploadImage(context,imageUri,callback)
+    }
+
+
 }

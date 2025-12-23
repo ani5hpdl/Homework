@@ -3,8 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 
     <application
+        tools:replace="android:fullBackupContent"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -18,16 +21,11 @@
             android:exported="false"
             android:label="@string/title_activity_add_product"
             android:theme="@style/Theme.FirstComposeApp" />
-        <activity
-            android:name=".view.ForgetPassword"
-            android:exported="false"
-            android:label="@string/title_activity_forget_password"
-            android:theme="@style/Theme.FirstComposeApp" />
-        <activity
-            android:name=".view.ForgetPasswordActivity"
-            android:exported="false"
-            android:label="@string/title_activity_forget_password"
-            android:theme="@style/Theme.FirstComposeApp" />
+<!--        <activity-->
+<!--            android:name=".view.ForgetPassword"-->
+<!--            android:exported="false"-->
+<!--            android:label="@string/title_activity_forget_password"-->
+<!--            android:theme="@style/Theme.FirstComposeApp" />-->
         <activity
             android:name=".view.SplashActivity"
             android:exported="true"
@@ -49,11 +47,11 @@
             android:exported="false"
             android:label="@string/title_activity_sign_up"
             android:theme="@style/Theme.FirstComposeApp" />
-        <activity
-            android:name=".view.LoginActivity"
-            android:exported="false"
-            android:label="@string/title_activity_login"
-            android:theme="@style/Theme.FirstComposeApp" />
+<!--        <activity-->
+<!--            android:name=".view.LoginActivity"-->
+<!--            android:exported="false"-->
+<!--            android:label="@string/title_activity_login"-->
+<!--            android:theme="@style/Theme.FirstComposeApp" />-->
         <activity
             android:name=".view.Login"
             android:exported="false"

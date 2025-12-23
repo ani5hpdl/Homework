@@ -7,9 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.FirstComposeApp"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.FirstComposeApp"
@@ -43,6 +41,8 @@ android {
 }
 
 dependencies {
+    implementation("com.cloudinary:cloudinary-android:2.1.0")
+    implementation("io.coil-kt.coil3:coil-compose:3.3.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
