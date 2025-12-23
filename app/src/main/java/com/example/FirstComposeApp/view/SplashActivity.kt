@@ -47,7 +47,7 @@ fun SplashScreen(){
     LaunchedEffect(Unit) {
         delay(3000)
         val intent = Intent(context,
-            Login::class.java)
+            DashboardActivity::class.java)
         context.startActivity(intent)
         activity.finish()
     }
@@ -61,7 +61,7 @@ fun SplashScreen(){
             verticalArrangement = Arrangement.Center
         ) {
             Image(
-                painter = painterResource(R.drawable.gmail),
+                painter = painterResource(R.drawable.img),
                 contentDescription = null,
                 modifier = Modifier.size(50.dp)
             )

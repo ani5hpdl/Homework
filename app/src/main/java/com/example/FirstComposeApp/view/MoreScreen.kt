@@ -26,11 +26,8 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.FirstComposeApp.DashboardActivity
 import com.example.FirstComposeApp.model.ProductModel
-import com.example.FirstComposeApp.model.UserModel
 import com.example.FirstComposeApp.repository.ProductRepoImpl
-import com.example.FirstComposeApp.ui.theme.Purple40
 import com.example.FirstComposeApp.ui.theme.PurpleGrey80
 import com.example.FirstComposeApp.viewmodel.ProductViewModel
 

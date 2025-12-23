@@ -1,5 +1,6 @@
 package com.example.FirstComposeApp.viewmodel
 
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.FirstComposeApp.model.ProductModel
 import com.example.FirstComposeApp.repository.ProductRepo
@@ -20,12 +21,33 @@ class ProductViewModel(val repo: ProductRepo) : ViewModel() {
         repo.deleteProduct(productId ,callback)
     }
 
-    fun getAllProduct(callback: (Boolean, String, List<ProductModel>?) -> Unit){
-        repo.getAllProduct(callback)
+    private val _products = MutableLiveData<ProductModel?>()
+    val products : MutableLiveData<ProductModel?> get() = _products
+
+    private val _allProducts = MutableLiveData<List<ProductModel>?>()
+    val allProducts : MutableLiveData<List<ProductModel>?> get() = _allProducts
+
+    private val _loading = MutableLiveData<Boolean>()
+    val loading : MutableLiveData<Boolean> get() = _loading
+
+    fun getAllProduct() {
+        loading.postValue(true)
+        repo.getAllProduct {
+                sucess,message,data->
+            if(sucess){
+                loading.postValue(false)
+                _allProducts.postValue(data)
+            }
+        }
     }
 
-    fun getProductById(productId: String,callback: (Boolean, String, ProductModel?) -> Unit){
-        repo.getProductById(productId,callback)
+    fun getProductById(productId :String) {
+        repo.getProductById(productId) {
+                sucess,message,data->
+            if(sucess){
+                _products.postValue(data)
+            }
+        }
     }
 
     fun getProductByCategory(categoryId:String, callback: (Boolean, String, List<ProductModel>?) -> Unit){

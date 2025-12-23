@@ -59,7 +59,7 @@
 //import androidx.compose.ui.unit.dp
 //import androidx.compose.ui.unit.sp
 //import androidx.compose.ui.window.DialogProperties
-//import com.example.FirstComposeApp.DashboardActivity
+//import com.example.FirstComposeApp.view.DashboardActivity
 //import com.example.FirstComposeApp.R
 //import com.example.FirstComposeApp.repository.UserRepoImpl
 //import com.example.FirstComposeApp.ui.theme.PurpleGrey80

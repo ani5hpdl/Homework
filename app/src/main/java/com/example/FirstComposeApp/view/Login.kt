@@ -62,10 +62,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.DialogProperties
-import com.example.FirstComposeApp.DashboardActivity
-import com.example.FirstComposeApp.MainActivity
 import com.example.FirstComposeApp.R
-import com.example.FirstComposeApp.model.UserModel
 import com.example.FirstComposeApp.repository.UserRepoImpl
 import com.example.FirstComposeApp.ui.theme.PurpleGrey80
 import com.example.FirstComposeApp.viewmodel.UserViewModel
@@ -187,22 +184,22 @@ fun LoginBodyy() {
                     .fillMaxWidth()
                     .padding(horizontal = 15.dp)
             ) {
-                SocialMediaCard(
-                    Modifier
-                        .height(60.dp)
-                        .weight(1f),
-                    R.drawable.facebbook,
-                    "Facebook"
-                )
-                Spacer(modifier = Modifier.width(20.dp))
-
-                SocialMediaCard(
-                    Modifier
-                        .height(60.dp)
-                        .weight(1f),
-                    R.drawable.gmail,
-                    "Gmail"
-                )
+//                SocialMediaCard(
+//                    Modifier
+//                        .height(60.dp)
+//                        .weight(1f),
+//                    R.drawable.facebbook,
+//                    "Facebook"
+//                )
+//                Spacer(modifier = Modifier.width(20.dp))
+//
+//                SocialMediaCard(
+//                    Modifier
+//                        .height(60.dp)
+//                        .weight(1f),
+//                    R.drawable.gmail,
+//                    "Gmail"
+//                )
             }
 
 
